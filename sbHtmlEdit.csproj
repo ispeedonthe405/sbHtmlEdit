@@ -8,11 +8,149 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2478.35" />
+    <None Remove="Javascript\BodyObserver.js" />
+    <None Remove="Javascript\CheckForTextSelection.js" />
+    <None Remove="Javascript\CreateDivForSelection.js" />
+    <None Remove="Javascript\CreateSpanForSelection.js" />
+    <None Remove="Javascript\CursorMovedListener.js" />
+    <None Remove="Javascript\DesignMode.js" />
+    <None Remove="Javascript\GetBodyAttribute.js" />
+    <None Remove="Javascript\GetBodyInnerHTML.js" />
+    <None Remove="Javascript\GetBodyOuterHTML.js" />
+    <None Remove="Javascript\GetBodyStyle.js" />
+    <None Remove="Javascript\GetElementAttribute.js" />
+    <None Remove="Javascript\GetElementInnerHTML.js" />
+    <None Remove="Javascript\GetElementOuterHTML.js" />
+    <None Remove="Javascript\InsertElement.js" />
+    <None Remove="Javascript\InsertInlineImage.js" />
+    <None Remove="Javascript\InstallEnterKeyOverride.js" />
+    <None Remove="Javascript\InstallKeyboardListener.js" />
+    <None Remove="Javascript\InstallMouseListener.js" />
+    <None Remove="Javascript\ResampleBody.js" />
+    <None Remove="Javascript\SetActiveElementAttribute.js" />
+    <None Remove="Javascript\SetBodyAttribute.js" />
+    <None Remove="Javascript\SetBodyInnerHTML.js" />
+    <None Remove="Javascript\SetBodyOuterHTML.js" />
+    <None Remove="Javascript\SetBodyStyle.js" />
+    <None Remove="Javascript\SetBodyStyleProperty.js" />
+    <None Remove="Javascript\SetElementAttribute.js" />
+    <None Remove="Javascript\SetElementId.js" />
+    <None Remove="Javascript\SetElementInnerHTML.js" />
+    <None Remove="Javascript\SetElementOuterHTML.js" />
+    <None Remove="Javascript\SetElementStyleProperty.js" />
+    <None Remove="Javascript\SetEmailSignature.js" />
+    <None Remove="Javascript\SetInitialCursorPosition.js" />
+    <None Remove="Javascript\StandardTextEditCall.js" />
+    <None Remove="Javascript\WriteBodyElement.js" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Javascript\" />
+    <EmbeddedResource Include="Javascript\BodyObserver.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\CheckForTextSelection.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\CreateDivForSelection.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\CreateSpanForSelection.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\CursorMovedListener.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\DesignMode.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\GetBodyAttribute.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\GetBodyInnerHTML.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\GetBodyOuterHTML.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\GetBodyStyle.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\GetElementAttribute.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\GetElementInnerHTML.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\GetElementOuterHTML.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\InsertElement.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\InsertInlineImage.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\InstallEnterKeyOverride.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\InstallKeyboardListener.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\InstallMouseListener.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\ResampleBody.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetActiveElementAttribute.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetBodyAttribute.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetBodyInnerHTML.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetBodyOuterHTML.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetBodyStyle.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetBodyStyleProperty.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetElementAttribute.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetElementId.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetElementInnerHTML.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetElementOuterHTML.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetElementStyleProperty.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetEmailSignature.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\SetInitialCursorPosition.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\StandardTextEditCall.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Javascript\WriteBodyElement.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2478.35" />
   </ItemGroup>
 
 </Project>
