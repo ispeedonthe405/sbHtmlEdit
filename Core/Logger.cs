@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
 namespace sbHtmlEdit.Core
 {
@@ -10,7 +6,7 @@ namespace sbHtmlEdit.Core
     {
         public static void LogException(Exception ex)
         {
-            
+            Debug.WriteLine(ex.Message);
         }
     }
 }

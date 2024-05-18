@@ -38,7 +38,6 @@
     <None Remove="Javascript\SetElementInnerHTML.js" />
     <None Remove="Javascript\SetElementOuterHTML.js" />
     <None Remove="Javascript\SetElementStyleProperty.js" />
-    <None Remove="Javascript\SetEmailSignature.js" />
     <None Remove="Javascript\SetInitialCursorPosition.js" />
     <None Remove="Javascript\StandardTextEditCall.js" />
     <None Remove="Javascript\WriteBodyElement.js" />
@@ -133,9 +132,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Javascript\SetElementStyleProperty.js">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Javascript\SetEmailSignature.js">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Javascript\SetInitialCursorPosition.js">

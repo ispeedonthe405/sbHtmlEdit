@@ -32,5 +32,10 @@ namespace sbHtmlEdit.Core
 
             return color;
         }
+
+        public static string ToJavascriptRGB(this Color incolor)
+        {
+            return $"rgb({incolor.R},{incolor.G},{incolor.B})";
+        }
     }
 }

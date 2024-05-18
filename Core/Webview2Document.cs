@@ -7,7 +7,6 @@
 /// and WebMessage on the browser side.
 
 
-using Eudora.Net.Javascript;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
@@ -401,7 +400,6 @@ namespace sbHtmlEdit.Core
             {
                 //await ExecuteScriptAsync(JsDepot.js_SetBodyStyleProperty, [StyleAttribute.property_FontFamily, newValue]);
             }
-            await ResampleDocument();
         }
 
         public async void SetFontSize(string fontSize)
@@ -427,7 +425,6 @@ namespace sbHtmlEdit.Core
             {
                 //await ExecuteScriptAsync(JsDepot.js_SetBodyStyleProperty, [StyleAttribute.property_FontSize, newValue]);
             }
-            await ResampleDocument();
         }
 
         public async void SetFontColor(Color color)

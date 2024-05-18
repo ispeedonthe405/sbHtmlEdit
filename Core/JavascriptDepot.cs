@@ -1,8 +1,7 @@
-﻿using Eudora.Net.Core;
-using System.IO;
+﻿using System.IO;
 using System.Reflection;
 
-namespace Eudora.Net.Javascript
+namespace sbHtmlEdit.Core
 {
     internal static class JsDepot
     {
@@ -10,45 +9,43 @@ namespace Eudora.Net.Javascript
         #region Script resource paths
         /////////////////////////////
 
-        private static readonly string path_DesignMode = "Eudora.Net.Javascript.DesignMode.js";
+        private static readonly string path_DesignMode = "sbHtmlEdit.Javascript.DesignMode.js";
 
-        private static readonly string path_SetInitialCursorPos = "Eudora.Net.Javascript.SetInitialCursorPosition.js";
+        private static readonly string path_SetInitialCursorPos = "sbHtmlEdit.Javascript.SetInitialCursorPosition.js";
 
-        private static readonly string path_InsertElement = "Eudora.Net.Javascript.InsertElement.js";
-        private static readonly string path_InsertInlineImage = "Eudora.Net.Javascript.InsertInlineImage.js";
-        private static readonly string path_CreateSpanForSelection = "Eudora.Net.Javascript.CreateSpanForSelection.js";
-        private static readonly string path_CreateDivForSelection = "Eudora.Net.Javascript.CreateDivForSelection.js";
-        private static readonly string path_CheckForTextSelection = "Eudora.Net.Javascript.CheckForTextSelection.js";
+        private static readonly string path_InsertElement = "sbHtmlEdit.Javascript.InsertElement.js";
+        private static readonly string path_InsertInlineImage = "sbHtmlEdit.Javascript.InsertInlineImage.js";
+        private static readonly string path_CreateSpanForSelection = "sbHtmlEdit.Javascript.CreateSpanForSelection.js";
+        private static readonly string path_CreateDivForSelection = "sbHtmlEdit.Javascript.CreateDivForSelection.js";
+        private static readonly string path_CheckForTextSelection = "sbHtmlEdit.Javascript.CheckForTextSelection.js";
 
-        private static readonly string path_BodyObserver = "Eudora.Net.Javascript.BodyObserver.js";
-        private static readonly string path_CursorMovedListener = "Eudora.Net.Javascript.CursorMovedListener.js";
-        private static readonly string path_MouseListener = "Eudora.Net.Javascript.InstallMouseListener.js";
-        private static readonly string path_KeyboardListener = "Eudora.Net.Javascript.InstallKeyboardListener.js";
-        private static readonly string path_EnterKeyOverride = "Eudora.Net.Javascript.InstallEnterKeyOverride.js";
+        private static readonly string path_BodyObserver = "sbHtmlEdit.Javascript.BodyObserver.js";
+        private static readonly string path_CursorMovedListener = "sbHtmlEdit.Javascript.CursorMovedListener.js";
+        private static readonly string path_MouseListener = "sbHtmlEdit.Javascript.InstallMouseListener.js";
+        private static readonly string path_KeyboardListener = "sbHtmlEdit.Javascript.InstallKeyboardListener.js";
+        private static readonly string path_EnterKeyOverride = "sbHtmlEdit.Javascript.InstallEnterKeyOverride.js";
 
-        private static readonly string path_ResampleBody = "Eudora.Net.Javascript.ResampleBody.js";
-        private static readonly string path_GetBodyInnerHTML = "Eudora.Net.Javascript.GetBodyInnerHTML.js";
-        private static readonly string path_SetBodyInnerHTML = "Eudora.Net.Javascript.SetBodyInnerHTML.js";
-        private static readonly string path_GetBodyOuterHTML = "Eudora.Net.Javascript.GetBodyOuterHTML.js";
-        private static readonly string path_SetBodyOuterHTML = "Eudora.Net.Javascript.SetBodyOuterHTML.js";
-        private static readonly string path_GetBodyAttribute = "Eudora.Net.Javascript.GetBodyAttribute.js";
-        private static readonly string path_SetBodyAttribute = "Eudora.Net.Javascript.SetBodyAttribute.js";
-        private static readonly string path_SetBodyStyleProperty = "Eudora.Net.Javascript.SetBodyStyleProperty.js";
+        private static readonly string path_ResampleBody = "sbHtmlEdit.Javascript.ResampleBody.js";
+        private static readonly string path_GetBodyInnerHTML = "sbHtmlEdit.Javascript.GetBodyInnerHTML.js";
+        private static readonly string path_SetBodyInnerHTML = "sbHtmlEdit.Javascript.SetBodyInnerHTML.js";
+        private static readonly string path_GetBodyOuterHTML = "sbHtmlEdit.Javascript.GetBodyOuterHTML.js";
+        private static readonly string path_SetBodyOuterHTML = "sbHtmlEdit.Javascript.SetBodyOuterHTML.js";
+        private static readonly string path_GetBodyAttribute = "sbHtmlEdit.Javascript.GetBodyAttribute.js";
+        private static readonly string path_SetBodyAttribute = "sbHtmlEdit.Javascript.SetBodyAttribute.js";
+        private static readonly string path_SetBodyStyleProperty = "sbHtmlEdit.Javascript.SetBodyStyleProperty.js";
 
-        private static readonly string path_SetElementId = "Eudora.Net.Javascript.SetElementId.js";
-        private static readonly string path_GetElementInnerHTML = "Eudora.Net.Javascript.GetElementInnerHTML.js";
-        private static readonly string path_SetElementInnerHTML = "Eudora.Net.Javascript.SetElementInnerHTML.js";
-        private static readonly string path_GetElementOuterHTML = "Eudora.Net.Javascript.GetElementOuterHTML.js";
-        private static readonly string path_SetElementOuterHTML = "Eudora.Net.Javascript.SetElementOuterHTML.js";
-        private static readonly string path_GetElementAttribute = "Eudora.Net.Javascript.GetElementAttribute.js";
-        private static readonly string path_SetElementAttribute = "Eudora.Net.Javascript.SetElementAttribute.js";
-        private static readonly string path_SetElementStyleProperty = "Eudora.Net.Javascript.SetElementStyleProperty.js";
+        private static readonly string path_SetElementId = "sbHtmlEdit.Javascript.SetElementId.js";
+        private static readonly string path_GetElementInnerHTML = "sbHtmlEdit.Javascript.GetElementInnerHTML.js";
+        private static readonly string path_SetElementInnerHTML = "sbHtmlEdit.Javascript.SetElementInnerHTML.js";
+        private static readonly string path_GetElementOuterHTML = "sbHtmlEdit.Javascript.GetElementOuterHTML.js";
+        private static readonly string path_SetElementOuterHTML = "sbHtmlEdit.Javascript.SetElementOuterHTML.js";
+        private static readonly string path_GetElementAttribute = "sbHtmlEdit.Javascript.GetElementAttribute.js";
+        private static readonly string path_SetElementAttribute = "sbHtmlEdit.Javascript.SetElementAttribute.js";
+        private static readonly string path_SetElementStyleProperty = "sbHtmlEdit.Javascript.SetElementStyleProperty.js";
 
-        private static readonly string path_SetActiveElementAttribute = "Eudora.Net.Javascript.SetActiveElementAttribute.js";
+        private static readonly string path_SetActiveElementAttribute = "sbHtmlEdit.Javascript.SetActiveElementAttribute.js";
 
-        private static readonly string path_SetEmailSignature = "Eudora.Net.Javascript.SetEmailSignature.js";
-
-        private static readonly string path_StandardTextEditCall = "Eudora.Net.Javascript.StandardTextEditCall.js";
+        private static readonly string path_StandardTextEditCall = "sbHtmlEdit.Javascript.StandardTextEditCall.js";
 
         /////////////////////////////
         #endregion Script resource paths
@@ -94,8 +91,6 @@ namespace Eudora.Net.Javascript
         public static string js_SetElementStyleProperty { get; private set; } = string.Empty;
 
         public static string js_SetActiveElementAttribute { get; private set; } = string.Empty;
-
-        public static string js_SetEmailSignature { get; private set; } = string.Empty;
 
         public static string js_StandardTextEditCall { get; private set; } = string.Empty;
 
@@ -146,8 +141,6 @@ namespace Eudora.Net.Javascript
             js_SetElementStyleProperty = LoadScript(path_SetElementStyleProperty);
 
             js_SetActiveElementAttribute = LoadScript(path_SetActiveElementAttribute);
-
-            js_SetEmailSignature = LoadScript(path_SetEmailSignature);
 
             js_StandardTextEditCall = LoadScript(path_StandardTextEditCall);
         }
