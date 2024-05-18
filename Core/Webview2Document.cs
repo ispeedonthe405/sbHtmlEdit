@@ -450,7 +450,6 @@ namespace sbHtmlEdit.Core
             {
                 //await ExecuteScriptAsync(JsDepot.js_SetBodyStyleProperty, [StyleAttribute.property_FontColor, newValue]);
             }
-            await ResampleDocument();
         }
 
         public async void ToggleBold(bool value)
@@ -476,7 +475,6 @@ namespace sbHtmlEdit.Core
             {
                 //await ExecuteScriptAsync(JsDepot.js_SetBodyStyleProperty, [StyleAttribute.property_FontWeight, newValue]);
             }
-            await ResampleDocument();
         }
 
         public async void ToggleItalic(bool value)
@@ -502,7 +500,6 @@ namespace sbHtmlEdit.Core
             {
                 //await ExecuteScriptAsync(JsDepot.js_SetBodyStyleProperty, [StyleAttribute.property_FontStyle, newValue]);
             }
-            await ResampleDocument();
         }
 
         public async void ToggleUnderline(bool value)
